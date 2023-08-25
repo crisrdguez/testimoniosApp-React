@@ -1,6 +1,5 @@
-import logo from './logo.svg';
 import './App.css';
-import Testimonio from './components/Testimonio';
+import TestimonioClase from './components/Testimonio';
 
 
 
@@ -38,16 +37,12 @@ function App() {
   ];
   
 
-
-
-
-
   return (
     <div className="App">
       <div className='contenedor-principal'>
         <h1>Testimonios de personas reales acerca del pueblo más bonito del mundo: Aranjuez</h1>
         {testimonios.map((testimonio, index) => (
-          <Testimonio 
+          <TestimonioClase 
           key={index}
           nombre={testimonio.nombre}
           pais={testimonio.pais}
